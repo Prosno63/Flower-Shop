@@ -55,7 +55,7 @@ body{
     height: 400px;
     width: 300px;
     border-radius: 200px 200px 0px 0px;
-    margin-left: 50px;
+    margin-left: 45px;
 
 }
 
@@ -111,6 +111,11 @@ body{
 
 }
 
+.service-img{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 .btn-primary{
     border-radius: 8px;
     background: #E55473;
@@ -141,17 +146,20 @@ body{
 }
 
 .deal-description{
-    width: 500px;
+
     text-align:center;
-    font-size: 20px;
     
 
 }
 
 .deal-description p, h1{
     margin-bottom: 15px;
-}
 
+} 
+.deal-description h1{
+
+    font-size: 40px;
+}
 .collection-tree{
     display: flex;
     justify-content: space-evenly;
