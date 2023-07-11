@@ -1,4 +1,9 @@
-
+*{
+    margin: 0; 
+}
+body{
+    font-family: 'Kanit', sans-serif;
+}
 .header-container{
     display: flex;
     justify-content: space-between;
@@ -6,15 +11,16 @@
     align-items: center;
     gap: 97px;
     margin-bottom: 30px;
+    height: 100vh;
 
 }
 
 .head-img img{
     width: 635px;
-    height: 800px;
+    height: 700px;
     padding-right: 55px;
     padding-top: 50px;
-    padding-bottom: 0px;
+
 }
 
 .deal-img{
@@ -28,14 +34,21 @@
 
 .head-description{
     margin-left: 240px;
-    margin-top: 197px;
-    text-align:start;
+    margin-top: 150px;
+    text-align: start;
+    
 }
 
-#h-title{
-    font-family: Lato;
-    font-weight: 800px;
+.head-description h1{
 
+    padding-bottom: 10px;
+    text-shadow: #08100d;
+    font-size: 50px;
+
+}
+
+.head-description p{
+    padding-bottom: 15px;
 }
 
 .img-flower{
@@ -43,11 +56,13 @@
     width: 300px;
     border-radius: 200px 200px 0px 0px;
     margin-left: 50px;
+
 }
 
 .design-tree a{
     display: flex;
     justify-content: space-evenly;
+    margin-left: 55px;
 }
 
 .featured-flower h3{
@@ -68,6 +83,9 @@
 .design-tree{
 
     display: flex;
+    justify-content: space-evenly;
+    padding-left: 70px;
+    padding-right: 100px;
     gap: 5px;
 
 }
@@ -83,9 +101,9 @@
     background-color:#2727270D;
     margin-left: 240px;
     margin-right: 235px;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 50px;
-    height: 250px;
+    height: 300px;
     display: flex;
     justify-content:space-evenly;
     align-items: center;
@@ -102,6 +120,12 @@
     font-weight: 400;
     color: white;
     display: inline-flex;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .hot-deals-banner{
@@ -119,13 +143,22 @@
 .deal-description{
     width: 500px;
     text-align:center;
+    font-size: 20px;
+    
+
+}
+
+.deal-description p, h1{
+    margin-bottom: 15px;
 }
 
 .collection-tree{
     display: flex;
     justify-content: space-evenly;
-    gap: 5px;
-
+    align-items: center;
+    padding-right: 166px;
+    padding-left: 125px;
+    gap: 3px;
 }
 .collection-tree .img-flower{
     background-color: pink;
@@ -138,6 +171,7 @@
     font-size: 40px;
     font-weight: 700;
     text-align: center;
+    margin-top: 15px;
     
 }
 
@@ -188,13 +222,16 @@
 .foot p{
     color: aliceblue;
     font-size: 18px;
+    margin-bottom: 15px;
 }
 
 .foot h3{
     font-size: 40px;
+    margin-bottom: 15px;
 }
 #copy{
     color: #E55473;
+    margin-top: 100px;
 }
 
 .contact input[type="text"], .contact input[type="email"]{
@@ -209,4 +246,69 @@
     width: 60%;
     margin-right: 15px;
     height: 30px;
+}
+
+.shop-container h3{
+
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
+    
+}
+
+
+.shop-container p{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 18px;
+    
+}
+
+.shops{
+    display: flex;
+    justify-content:space-between;
+    padding-left: 90px;
+    padding-right: 20px;
+    gap: 5px;
+}
+
+.shop-img{
+    width: 400px;
+    height: 400px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+}
+
+.shop-tree{
+
+    position: relative;
+    width: 50%;
+
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.shop-tree:hover .image {
+    opacity: 0.3;
+}
+  
+.shop-tree:hover .middle {
+    opacity: 1;
+}
+  
+.text{
+    background-color: #08100d;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
