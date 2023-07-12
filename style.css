@@ -108,6 +108,7 @@ body{
     justify-content:space-evenly;
     align-items: center;
     text-align: center;
+    border-radius: 8px;
 
 }
 
@@ -170,7 +171,7 @@ body{
 }
 .collection-tree .img-flower{
     background-color: pink;
-    border-radius: 0;
+    border-radius: 8px;
 
 }
 
@@ -193,6 +194,7 @@ body{
 .box2{
 
     background-image: url(Rectangle\ 9.png);
+    background-position:center;
     
     margin-left: 225px;
     margin-right: 225px;
@@ -202,6 +204,7 @@ body{
     padding-top: 25px;
     text-align: center;
     width: 1100px;
+    border-radius: 8px;
 
 }
 
@@ -287,6 +290,7 @@ body{
     opacity: 1;
     display: block;
     transition: .5s ease;
+    border-radius: 10px;
 }
 
 .shop-tree{
